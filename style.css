@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(bcg1.jpg);
+    background-size: cover;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+}
+
+h1 {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    border: .8px solid rgb(0, 0, 0);
+    background: #c0c062;
+    border-radius: 10px;
+    font-size: 1.2em;
+    box-shadow: 4px 4px 5px rgb(128, 128, 128);
+    position: relative;
+    transition: 0.2s;
+    margin-bottom: 30px;
+}
+
+button.selected {
+    background: #ffffff;
+}
+
+img {
+    width: 50%;
+    height: 40vh;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    filter: opacity(80%);
+}
+
+button:hover {
+    background: #cccccc96;
+    cursor: pointer;
+}
+
+.tabs {
+   width: 100%;
+   margin: auto;
+   border-radius: 4px;
+}
+
+.tab {
+    display: none;
+}
